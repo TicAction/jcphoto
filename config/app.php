@@ -151,11 +151,12 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         Collective\Html\HtmlServiceProvider::class,
-        Barryvdh\Debugbar\ServiceProvider::class,
         Creativeorange\Gravatar\GravatarServiceProvider::class,
         Laracasts\Flash\FlashServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
+
 
         /*
          * Application Service Providers...
@@ -216,7 +217,7 @@ return [
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'Gravatar' => Creativeorange\Gravatar\Facades\Gravatar::class,
         'Image' => Intervention\Image\Facades\Image::class,
-
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
 
     ],
