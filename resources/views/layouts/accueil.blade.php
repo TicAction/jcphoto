@@ -33,9 +33,7 @@
 <!-- Put your page content here! -->
 <div class="container-fluid">
     @yield('content')
-  @foreach($titles as $title)
-      @include('configs.index',['$titles'=>$title])
-@endforeach
+  
 </div>
 
 <!-- jQuery -->

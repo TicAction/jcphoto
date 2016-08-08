@@ -12,5 +12,22 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    return view('index');
 });
+Route::get('/{locale}/{name}',function($locale){
+    App::setLocale($locale);
+    return view('galleries.gallerie');
+});
+
+
+Route::resource('/config','ConfigController@index');
+
+
+Route::get('/welcome', function(){
+   return view('welcome2');
+});
+View::composer('configs.index','App\Http\ViewComposers\ConfigComposer');
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
