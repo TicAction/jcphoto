@@ -1,31 +1,21 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: ghislain girard
+ * Date: 2016-08-09
+ * Time: 08:47
+ */
 
-namespace App\Http\ViewComposers;
+namespace app\Http\ViewComposers;
 
-use App\Http\Controllers\ConfigController;
-use Illuminate\View\View;
+
+use App\Config;
 
 class ConfigComposer
 {
+public function compose($view)
+{
+//    $view->with('title', Config::latest()->first());
+}
 
-    /**
-     * Create a movie composer.
-     *
-     * @return void
-     */
-    public function __construct(array $data)
-    {
-        $this->data = $data;
-    }
-
-    /**
-     * Bind data to the view.
-     *
-     * @param  View  $view
-     * @return void
-     */
-    public function compose(View $view)
-    {
-        $data = $this->data;
-    }
 }

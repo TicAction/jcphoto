@@ -16,8 +16,7 @@ class ConfigController extends Controller
      */
     public function index()
     {
-        $titles = Config::findOrFail(1);
-
+        $titles = Config::all();
         return view('configs.index',compact('titles'));
     }
 

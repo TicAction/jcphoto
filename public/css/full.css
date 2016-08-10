@@ -5,7 +5,7 @@
  */
 
 body {
-    margin-top: -40px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    margin-top: -80px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     padding-bottom: 0px;
 }
 

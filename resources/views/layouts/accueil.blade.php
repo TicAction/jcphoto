@@ -10,13 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <title>@include('configs.index')</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/superheros.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/full.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
     {{Html::favicon('favicon.ico')}}
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
